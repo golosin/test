@@ -1,6 +1,7 @@
 import sys
 import pytest
 import pytest_asyncio
+import allure
 
 
 @pytest.mark.asyncio
@@ -15,6 +16,9 @@ import pytest_asyncio
         ]
     ),
 )
+@allure.feature('Тестирование таблицы')
+@allure.title('1) Изменение названия')
+@allure.severity('blocker')
 async def test_rename_table(create_db, conn, param) -> None:
     try:
         await conn.execute(f"ALTER TABLE People RENAME TO {param['table_name']};")
