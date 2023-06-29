@@ -15,7 +15,7 @@ import pytest_asyncio
         ]
     ),
 )
-async def test_rename(create_db, conn, param) -> None:
+async def test_rename_table(create_db, conn, param) -> None:
     try:
         await conn.execute(f"ALTER TABLE People RENAME TO {param['table_name']};")
     except:

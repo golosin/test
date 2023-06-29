@@ -19,8 +19,8 @@ jobs:
       - name: Start PostgreSQL container
         run: docker run --name test_Pangolin -e POSTGRES_PASSWORD=postgres -e POSTGRES_USER=postgres -e POSTGRES_DB=test -d -p 5432:5432 postgres
 
-      - name: Wait for PostgreSQL to start
-        run: docker exec test_Pangolin pg_isready -U postgres -d test -h localhost -p 5432 -t 30
+      # - name: Wait for PostgreSQL to start
+      #   run: docker exec test_Pangolin pg_isready -U postgres -d test -h localhost -p 5432 -t 30
 
       - name: Set up Python 3.11
         uses: actions/setup-python@v3
