@@ -18,6 +18,11 @@ jobs:
 
       - name: Start PostgreSQL container
         run: docker run --name test_Pangolin -e POSTGRES_PASSWORD=${{ secrets.POSTGRES_PASSWORD }} -e POSTGRES_USER=${{ secrets.POSTGRES_USER }} -e POSTGRES_DB=${{ secrets.POSTGRES_DB }} -d -p 5432:5432 ${{ secrets.POSTGRES_HOST }} postgres
+        env:
+            POSTGRES_USER: ${{ secrets.POSTGRES_USER }}
+            POSTGRES_PASSWORD: ${{ secrets.POSTGRES_PASSWORD }}
+            POSTGRES_HOST: ${{ secrets.POSTGRES_HOST }}
+            POSTGRES_DB: ${{ secrets.POSTGRES_DB }}
 
       - name: Set up Python 3.11
         uses: actions/setup-python@v3
