@@ -34,6 +34,6 @@ jobs:
           poetry run pytest
         env:
             POSTGRES_USER: "postgres"
-            POSTGRES_PASSWORD: "password"
+            POSTGRES_PASSWORD: "postgres"
             POSTGRES_HOST: "localhost"
             POSTGRES_DB: "test"
