@@ -17,7 +17,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Start PostgreSQL container
-        run: docker run --name test_Pangolin -e POSTGRES_PASSWORD=${{ secrets.POSTGRES_PASSWORD }} -e POSTGRES_USER=${{ secrets.POSTGRES_USER }} -e POSTGRES_DB=${{ secrets.POSTGRES_DB }} -d -p 5432:5432 ${{ secrets.POSTGRES_HOST }} postgres
+        run: docker run --name test_Pangolin -e POSTGRES_PASSWORD=postgres -e POSTGRES_USER=postgres -e POSTGRES_DB=test -d -p 5432:5432 postgres
 
       - name: Set up Python 3.11
         uses: actions/setup-python@v3
@@ -34,6 +34,6 @@ jobs:
           poetry run pytest
         env:
             POSTGRES_USER: "postgres"
-            POSTGRES_PASSWORD: "postgres"
+            POSTGRES_PASSWORD: "password"
             POSTGRES_HOST: "localhost"
             POSTGRES_DB: "test"
