@@ -17,10 +17,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Start PostgreSQL container
-        run: docker run --name test_Pangolin -e POSTGRES_PASSWORD=postgres -e POSTGRES_USER=postgres -e POSTGRES_DB=test -d -p 5432:5432 postgres
-
-      # - name: Wait for PostgreSQL to start
-      #   run: docker exec test_Pangolin pg_isready -U postgres -d test -h localhost -p 5432 -t 30
+        run: docker run --name test_Pangolin -e POSTGRES_PASSWORD=${{ secrets.POSTGRES_PASSWORD }} -e POSTGRES_USER=${{ secrets.POSTGRES_USER }} -e POSTGRES_DB=${{ secrets.POSTGRES_DB }} -d -p 5432:5432 ${{ secrets.POSTGRES_HOST }} postgres
 
       - name: Set up Python 3.11
         uses: actions/setup-python@v3
@@ -36,7 +33,7 @@ jobs:
         run: |
           poetry run pytest
         env:
-            POSTGRES_USER: "postgres"
-            POSTGRES_PASSWORD: "postgres"
-            POSTGRES_HOST: "localhost"
-            POSTGRES_DB: "test"
+            POSTGRES_USER: ${{ secrets.POSTGRES_USER }}
+            POSTGRES_PASSWORD: ${{ secrets.POSTGRES_PASSWORD }}
+            POSTGRES_HOST: ${{ secrets.POSTGRES_HOST }}
+            POSTGRES_DB: ${{ secrets.POSTGRES_DB }}
