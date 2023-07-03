@@ -1,0 +1,52 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Mon Jul 03 10:47:53 GMT 2023","Mon Jul 03 10:47:53 GMT 2023","4","tests","test_01","","","","test_rename_table[param4]","
+    Тесты переименования таблицы People
+    "
+"passed","Mon Jul 03 10:47:54 GMT 2023","Mon Jul 03 10:47:54 GMT 2023","4","tests","test_01","","","","test_rename_table[param10]","
+    Тесты переименования таблицы People
+    "
+"passed","Mon Jul 03 10:47:54 GMT 2023","Mon Jul 03 10:47:54 GMT 2023","0","tests","test_01","","","","test_rename_table[param13]","
+    Тесты переименования таблицы People
+    "
+"passed","Mon Jul 03 10:47:54 GMT 2023","Mon Jul 03 10:47:54 GMT 2023","0","tests","test_01","","","","test_rename_table[param16]","
+    Тесты переименования таблицы People
+    "
+"passed","Mon Jul 03 10:47:54 GMT 2023","Mon Jul 03 10:47:54 GMT 2023","10","tests","test_01","","","","test_rename_table[param8]","
+    Тесты переименования таблицы People
+    "
+"passed","Mon Jul 03 10:47:54 GMT 2023","Mon Jul 03 10:47:54 GMT 2023","4","tests","test_01","","","","test_rename_table[param15]","
+    Тесты переименования таблицы People
+    "
+"passed","Mon Jul 03 10:47:53 GMT 2023","Mon Jul 03 10:47:53 GMT 2023","5","tests","test_01","","","","test_rename_table[param0]","
+    Тесты переименования таблицы People
+    "
+"passed","Mon Jul 03 10:47:54 GMT 2023","Mon Jul 03 10:47:54 GMT 2023","0","tests","test_01","","","","test_rename_table[param14]","
+    Тесты переименования таблицы People
+    "
+"passed","Mon Jul 03 10:47:54 GMT 2023","Mon Jul 03 10:47:54 GMT 2023","5","tests","test_01","","","","test_rename_table[param7]","
+    Тесты переименования таблицы People
+    "
+"passed","Mon Jul 03 10:47:53 GMT 2023","Mon Jul 03 10:47:53 GMT 2023","4","tests","test_01","","","","test_rename_table[param5]","
+    Тесты переименования таблицы People
+    "
+"passed","Mon Jul 03 10:47:53 GMT 2023","Mon Jul 03 10:47:53 GMT 2023","6","tests","test_01","","","","test_rename_table[param2]","
+    Тесты переименования таблицы People
+    "
+"passed","Mon Jul 03 10:47:53 GMT 2023","Mon Jul 03 10:47:53 GMT 2023","5","tests","test_01","","","","test_rename_table[param1]","
+    Тесты переименования таблицы People
+    "
+"passed","Mon Jul 03 10:47:54 GMT 2023","Mon Jul 03 10:47:54 GMT 2023","1","tests","test_01","","","","test_rename_table[param12]","
+    Тесты переименования таблицы People
+    "
+"passed","Mon Jul 03 10:47:53 GMT 2023","Mon Jul 03 10:47:53 GMT 2023","5","tests","test_01","","","","test_rename_table[param3]","
+    Тесты переименования таблицы People
+    "
+"passed","Mon Jul 03 10:47:54 GMT 2023","Mon Jul 03 10:47:54 GMT 2023","1","tests","test_01","","","","test_rename_table[param11]","
+    Тесты переименования таблицы People
+    "
+"passed","Mon Jul 03 10:47:54 GMT 2023","Mon Jul 03 10:47:54 GMT 2023","4","tests","test_01","","","","test_rename_table[param9]","
+    Тесты переименования таблицы People
+    "
+"passed","Mon Jul 03 10:47:53 GMT 2023","Mon Jul 03 10:47:53 GMT 2023","4","tests","test_01","","","","test_rename_table[param6]","
+    Тесты переименования таблицы People
+    "
