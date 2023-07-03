@@ -120,7 +120,7 @@ import allure
     ),
 )
 @allure.feature("Тестирование изменения таблицы")
-@allure.title("1) Изменение названия таблицы")
+# @allure.title("Изменение названия таблицы")
 @allure.severity("blocker")
 async def test_rename_table(create_db, conn, param) -> None:
     """
